@@ -44,6 +44,8 @@ wget -q -O /etc/slowdns/slowdns-ssh "https://raw.githubusercontent.com/Ezanwann/
 wget -q -O /etc/slowdns/slowdns-start "https://raw.githubusercontent.com/Ezanwann/DNS-AGN/main/ssh/startdns"
 wget -q -O /etc/slowdns/slowdns-stop "https://raw.githubusercontent.com/Ezanwann/DNS-AGN/main/stopdns"
 wget -q -O /etc/slowdns/slowdns-restart "https://raw.githubusercontent.com/Ezanwann/DNS-AGN/main/ssh/restartdns"
+wget "https://raw.githubusercontent.com/Ezanwann/DNS-AGN/main/slowdns"
+cp slowdns /bin/
 cd
 chmod +x /etc/slowdns/server.key
 chmod +x /etc/slowdns/server.pub
@@ -53,6 +55,7 @@ chmod +x /etc/slowdns/slowdns-ssh
 chmod +x /etc/slowdns/slowdns-start
 chmod +x /etc/slowdns/slowdns-stop
 chmod +x /etc/slowdns/slowdns-restart
+chmod +x /bin/slowdns
 cd
 #wget -q -O /etc/systemd/system/client-sldns.service "https://raw.githubusercontent.com/Ezanwann/SLDNS/main/slowdns/client-sldns.service"
 #wget -q -O /etc/systemd/system/server-sldns.service "https://raw.githubusercontent.com/Ezanwann/SLDNS/main/slowdns/server-sldns.service"
