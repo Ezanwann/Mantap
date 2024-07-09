@@ -25,11 +25,11 @@ fi
 clear
 apt install jq curl -y
 ###DOM#AIN=installer.my.id
-DOMAIN=slxray.cf
+DOMAIN=iniluna.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
-SUB_DOMAIN=${sub}.slxray.cf
-CF_ID=slinfinity69@gmail.com
-CF_KEY=3dcb550a77cb0a64dacf205243e3ac550f9db
+SUB_DOMAIN=kongsi.iniluna.xyz
+CF_ID=ezanstream@gmail.com
+CF_KEY=4ca048bc011061b0e01f2e4a0bdf535e038a8
 ##SUB_DOMAIN=${sub}.installer.my.id
 ##CF_ID=senowahyu62@gmail.com
 ##CF_KEY=84570683099becbeb0f04d8086ce6f309c56c
