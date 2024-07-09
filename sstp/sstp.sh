@@ -23,7 +23,7 @@ echo -e "${NC}${LIGHT}Fuck You!!"
 exit 0
 fi
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/sstp"
+akbarvpn="raw.githubusercontent.com/Ezanwann/Mantap/main/sstp"
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
@@ -48,13 +48,13 @@ mkdir /home/sstp
 touch /home/sstp/sstp_account
 touch /var/lib/crot/data-user-sstp
 #detail nama perusahaan
-country=ID
-state=Indonesia
-locality=Indonesia
+country=MY
+state=Malaysia
+locality=Malaysia
 organization=infinity
 organizationalunit=infinity
 commonname=cdn.covid19.go.id
-email=hayuk69@gmail.com
+email=aloneloner21@gmail.com
 
 #install sstp
 apt-get install -y build-essential cmake gcc linux-headers-`uname -r` git libpcre3-dev libssl-dev liblua5.1-0-dev ppp
