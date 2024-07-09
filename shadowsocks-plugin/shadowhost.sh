@@ -24,7 +24,7 @@ DOMAIN=iniluna.xyz
 SUB_DOMAIN=kongsi.iniluna.xyz
 NS_DOMAIN=ns.kongsi.iniluna.xyz
 CF_ID=aloneloner21@gmail.com
-CF_KEY=
+CF_KEY=4ca048bc011061b0e01f2e4a0bdf535e038a8
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/ipvps.conf
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
