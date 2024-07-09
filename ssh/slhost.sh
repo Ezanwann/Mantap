@@ -24,7 +24,7 @@ DOMAIN=iniluna.xyz
 SUB_DOMAIN=kongsi.iniluna.xyz
 NS_DOMAIN=ns.kongsi.inipuna.xyz
 CF_ID=ezanstream@gmail.com
-CF_KEY=dd2c5e0313f122b3c1833471d469b1025f492
+CF_KEY=4ca048bc011061b0e01f2e4a0bdf535e038a8
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
