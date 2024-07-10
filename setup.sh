@@ -59,9 +59,9 @@ mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
 wget https://${akbarvpn}/slhost.sh && chmod +x slhost.sh && ./slhost.sh "$ad" "$asd" "$ansd"
 #install xray
-wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
+wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh "$ad" "$asd" "$ansd"
 #install ssh ovpn
-wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh "$ad" "$asd" "$ansd"
 wget https://${akbarvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 wget https://${akbarvpnnn}/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
@@ -76,7 +76,7 @@ wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
 wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install SlowDNS
-wget https://raw.githubusercontent.com/Ezanwann/Mantap/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns
+wget https://raw.githubusercontent.com/Ezanwann/Mantap/main/SLDNS/install-sldns && chmod +x install-sldns && ./install-sldns "$ad" "$asd" "$ansd"
 # Informasi IP Saya dan Semua Port TCP UDP
 # wget https://raw.githubusercontent.com/Ezanwann/Mantap/main/ipsaya.sh && chmod +x ipsaya.sh
 #
