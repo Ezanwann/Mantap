@@ -2,9 +2,12 @@
 # Script  By SL
 # 2022 SLOWDNS
 # ===============================================
+ad=$1
+asd=$2
+ansd=$3
 cd
 rm -rf slhostdns.sh
-wget https://raw.githubusercontent.com/Ezanwann/SLDNS/main/slowdns/slhostdns.sh && chmod +x slhostdns.sh && ./slhostdns.sh
+wget https://raw.githubusercontent.com/Ezanwann/SLDNS/main/slowdns/slhostdns.sh && chmod +x slhostdns.sh && ./slhostdns.sh "$ad" "$asd" "$ansd"
 nameserver=$(cat /root/nsdomain)
 apt update -y
 apt install -y python3 python3-dnslib net-tools
