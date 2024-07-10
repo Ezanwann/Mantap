@@ -2,6 +2,9 @@
 # SL
 # ==========================================
 # Color
+ad=$1
+asd=$2
+ansd=$3
 RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
@@ -25,9 +28,9 @@ fi
 clear
 apt install jq curl -y
 ###DOM#AIN=installer.my.id
-DOMAIN=iniluna.xyz
+DOMAIN=$ad
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
-SUB_DOMAIN=kongsi.iniluna.xyz
+SUB_DOMAIN=$asd
 CF_ID=ezanstream@gmail.com
 CF_KEY=4ca048bc011061b0e01f2e4a0bdf535e038a8
 ##SUB_DOMAIN=${sub}.installer.my.id
