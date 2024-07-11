@@ -57,9 +57,9 @@ wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
 bash acme.sh --install
 rm acme.sh
 cd .acme.sh
-bash acme.sh --register-account -m senowahyu62@gmail.com
-bash acme.sh --issue --standalone -d $domain --force
-bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
+bash acme.sh --register-account -m ezanstrean@gmail.com
+bash acme.sh --issue --standalone -d $1 --force
+bash acme.sh --installcert -d $1 --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
 
 service squid start
 uuid7=$(cat /proc/sys/kernel/random/uuid)
