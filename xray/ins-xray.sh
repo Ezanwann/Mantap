@@ -36,6 +36,7 @@ latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases |
 
 # / / Installation Xray Core
 xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_version/xray-linux-64.zip"
+xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v1.8.16/Xray-linux-64.zip"
 
 # / / Make Main Directory
 mkdir -p /usr/bin/xray
