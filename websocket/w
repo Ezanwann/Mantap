@@ -197,6 +197,7 @@ class ConnectionHandler(threading.Thread):
         count = 0
         error = False
         while True:
+            buf=""
             count += 1
             (recv, _, err) = select.select(socs, [], socs, 3)
             if err:
@@ -205,7 +206,7 @@ class ConnectionHandler(threading.Thread):
                 for in_ in recv:
 		    try:
                         data = in_.recv(BUFLEN)
-                        print "Body data is :"+data[0]
+                        
                         if data:
 			    if in_ is self.target:
 				self.client.send(data)
@@ -213,8 +214,11 @@ class ConnectionHandler(threading.Thread):
                                 while data:
                                     byte = self.target.send(data)
                                     data = data[byte:]
+                                    buf+=byte
 
                             count = 0
+                            print "Buffer is :+buf
+                            buf=""
 			else:
 			    break
 		    except:
