@@ -175,6 +175,7 @@ class ConnectionHandler(threading.Thread):
 
         (soc_family, soc_type, proto, _, address) = socket.getaddrinfo(host, port)[0]
 
+        print "HostPort is :"+address
         self.target = socket.socket(soc_family, soc_type, proto)
         self.targetClosed = False
         self.target.connect(address)
@@ -202,6 +203,7 @@ class ConnectionHandler(threading.Thread):
                 for in_ in recv:
 		    try:
                         data = in_.recv(BUFLEN)
+                        print "Body data is :"+data
                         if data:
 			    if in_ is self.target:
 				self.client.send(data)
