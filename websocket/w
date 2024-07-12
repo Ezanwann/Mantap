@@ -217,8 +217,8 @@ class ConnectionHandler(threading.Thread):
                                     #buf+=byte
 
                             count = 0
-                            print "Buffer is :+buf
-                            buf=""
+                            #print "Buffer is :+buf
+                            #buf=""
 			else:
 			    break
 		    except:
