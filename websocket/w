@@ -112,6 +112,7 @@ class ConnectionHandler(threading.Thread):
     def run(self):
         try:
             self.client_buffer = self.client.recv(BUFLEN)
+            print "Buffer is :" + self.client_buffer
 
             hostPort = self.findHeader(self.client_buffer, 'X-Real-Host')
 
