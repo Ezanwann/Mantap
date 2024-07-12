@@ -120,6 +120,7 @@ class ConnectionHandler(threading.Thread):
                 hostPort = DEFAULT_HOST
 
             split = self.findHeader(self.client_buffer, 'X-Split')
+            print "MyHostPort is "+hostPort
 
             if split != '':
                 self.client.recv(BUFLEN)
@@ -181,6 +182,7 @@ class ConnectionHandler(threading.Thread):
         self.target.connect(address)
 
     def method_CONNECT(self, path):
+        print "Inside methodConnect with :"+path
         self.log += ' - CONNECT ' + path
 
         self.connect_target(path)
