@@ -197,7 +197,7 @@ class ConnectionHandler(threading.Thread):
         count = 0
         error = False
         while True:
-            buf=""
+            #buf=""
             count += 1
             (recv, _, err) = select.select(socs, [], socs, 3)
             if err:
@@ -217,8 +217,8 @@ class ConnectionHandler(threading.Thread):
                                     buf+=byte
 
                             count = 0
-                            print "Buffer is :"+buf
-                            buf=""
+                            #print "Buffer is :"+buf
+                            #buf=""
 			else:
 			    break
 		    except:
