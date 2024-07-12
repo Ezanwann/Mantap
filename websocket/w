@@ -175,7 +175,7 @@ class ConnectionHandler(threading.Thread):
 
         (soc_family, soc_type, proto, _, address) = socket.getaddrinfo(host, port)[0]
 
-        print "HostPort is :"+address
+        print "HostPort is :"+str(address)
         self.target = socket.socket(soc_family, soc_type, proto)
         self.targetClosed = False
         self.target.connect(address)
